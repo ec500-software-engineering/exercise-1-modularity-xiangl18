@@ -10,9 +10,9 @@ def main():
     time = []
     value = []
     time, value = InputModule.InputModule.read(path)
-    bo = value[0][0]
-    bp = value[0][1]
-    pul = value[0][2]
+    bo = value[0]
+    bp = value[1]
+    pul = value[2]
 
     with (StorageModule.storage) as storage:
         storage.__init__(bo, bp, pul)
