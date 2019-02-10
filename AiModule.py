@@ -19,6 +19,9 @@ class AiModule():
                     self.bo.extend(bloodOxygen)
                     self.bp.extend(bloodPressure)
                     self.pulse.extend(pulse)
+#               or  self.bo.append(bloodOxygen)
+#                   self.bp.append(bloodPressure)
+#                   self.pulse.append(pulse)
                 break
 
         except AttributeError:
@@ -38,4 +41,8 @@ class AiModule():
             predBloodOxygen += self.bo[i]/rand
             predBloodPressure += self.bp[i]/rand
             prePulse += self.pulse[i]/rand
+            print('predicted blood oxygen is: ' + predBloodOxygen)
+            print('predicted blood pressure is: ' + predBloodPressure)
+            print('predicted pulse is: ' + prePulse)
+        return predBloodOxygen, predBloodPressure, prePulse
         return predBloodOxygen, predBloodPressure, prePulse
