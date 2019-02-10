@@ -14,9 +14,8 @@ def main():
     bp = value[1]
     pul = value[2]
 
-    with (StorageModule.storage) as storage:
-        storage.__init__(bo, bp, pul)
-        storage.read()
+    storage = StorageModule.storage(bo, bp, pul)
+    storage.read()
 
     AlertModule.Alert_for_three_categories_input(value)
     AlertModule.Alert_Output()
