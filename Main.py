@@ -6,9 +6,9 @@ import UserInterfaceModule
 
 
 def main():
-    path = '/'
+    path = '\'
     time = []
-    valuse = []
+    value = []
     time, value = InputModule.InputModule.read(path)
     bo = value[0][1]
     bp = value[0][2]
