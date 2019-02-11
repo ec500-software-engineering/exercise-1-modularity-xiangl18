@@ -1,3 +1,6 @@
+# Copyright @ Kainan Liu liuknan@bu.edu
+# Input Module
+
 def read_data(path):
     time = []
     value = []
