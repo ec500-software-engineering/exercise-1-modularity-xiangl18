@@ -1,5 +1,5 @@
 # URL: https://github.com/WenjieLuo2333/ModuleDesign/blob/master/UserInterface_module.py
-# Copyright @ Qinmei Du duqinmei@bu.edu
+# Copyright 2019 Qinmei Du duqinmei@bu.edu
 # User Interface Module
 
 
