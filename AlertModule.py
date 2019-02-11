@@ -1,4 +1,4 @@
-# URL: https://github.com/ec500-software-engineering/exercise-1-modularity-WenjieLuo2333/blob/master/Alert_module.py
+# URL: https://github.com/WenjieLuo2333/ModuleDesign/blob/master/Alert_module.py
 # Copyright @ Wenjie Luo wjluo@bu.edu
 # Alert Module
 
