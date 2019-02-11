@@ -1,5 +1,5 @@
-#Copyright Xiang Li xiangl18@bu.edu
-#AI Module
+# Copyright Xiang Li xiangl18@bu.edu
+# AI Module
 
 
 import random
