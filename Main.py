@@ -14,9 +14,9 @@ def main():
     bp = InputModule_lxc.input(pathbp)
     pul = InputModule_lxc.input(pathpul)
     
-#   Input Module  
-    Storage(bo, bp, pul)
-    print(Storage.read())
+#   Storage Module  
+    for b1, b2, p1 in zip(bo, bp, pul):
+        Storage(b1, b2, p1)
     
 #   AI Module       
     ai = AiModule()
