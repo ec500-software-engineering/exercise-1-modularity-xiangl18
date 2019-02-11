@@ -1,5 +1,5 @@
 # URL: https://github.com/WenjieLuo2333/ModuleDesign/blob/master/Input_Module_lkn.py
-# Copyright @ Kainan Liu liuknan@bu.edu
+# Copyright 2019 Kainan Liu liuknan@bu.edu
 # Input Module
 
 def read_data(path):
