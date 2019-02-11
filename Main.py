@@ -1,4 +1,4 @@
-#Copyright Xiang Li xiangl18@bu.edu
+#Copyright 2019 Xiang Li xiangl18@bu.edu
 
 import InputModule_lxc
 from StorageModule import Storage
