@@ -1,3 +1,6 @@
+# Copyright @ Shilu Wu shiluwu@bu.edu
+# User Interface Module
+
 # It's the I/O documentation for the User_Interface_system
 #User Interface
 
