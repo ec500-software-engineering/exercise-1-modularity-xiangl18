@@ -34,7 +34,7 @@ def main():
         alt.Alert_for_three_categories_input(bpi)
         alt.Alert_for_three_categories_input(puli)
         alert = alt.Alert_Output()
-        if alert_sound != -1:
+        if alert != -1:
             print("Alert", dic[alert])
         else:
             print("All good.")
