@@ -1,5 +1,5 @@
 # URL: https://github.com/WenjieLuo2333/ModuleDesign/blob/master/Alert_module.py
-# Copyright @ Wenjie Luo wjluo@bu.edu
+# Copyright 2019 Wenjie Luo wjluo@bu.edu
 # Alert Module
 
 # It's the I/O documentation for Alert System
