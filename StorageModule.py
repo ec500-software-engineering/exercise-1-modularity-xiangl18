@@ -1,5 +1,5 @@
 # URL: https://github.com/WenjieLuo2333/ModuleDesign/blob/master/storage.py
-# Copyright @ Gang Wei wg0502@bu.edu
+# Copyright 2019 Gang Wei wg0502@bu.edu
 # Storage Module
 
 class Storage():
