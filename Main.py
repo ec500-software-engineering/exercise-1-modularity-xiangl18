@@ -1,3 +1,5 @@
+#Copyright Xiang Li xiangl18@bu.edu
+
 import InputModule_lxc
 from StorageModule import Storage
 from AiModule import AiModule
@@ -45,5 +47,4 @@ def main():
 
 
 if __name__ == '__main__':
-    main()
     main()
