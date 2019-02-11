@@ -6,7 +6,7 @@ class Storage():
     def filter(self):
         return 0
         #for useful data
-    Input = input()
+#     Input = input()
     # connection to the database
     # storage the data into the database
     # extract the data out of the database of the format
