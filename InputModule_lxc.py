@@ -1,5 +1,5 @@
 # URL: https://github.com/WenjieLuo2333/ModuleDesign/blob/master/InputModule_lxc.py
-#Copyright Xiaocheng Liang xcliang@bu.edu
+#Copyright 2019 Xiaocheng Liang xcliang@bu.edu
 #Input Module
 
 '''
