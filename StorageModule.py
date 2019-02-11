@@ -1,5 +1,5 @@
-class storage():
-    def __init__(self,bo,bp,pul):
+class Storage():
+    def __init__(self, bo, bp, pul):
         self.bo = bo
         self.bp = bp
         self.pul = pul
