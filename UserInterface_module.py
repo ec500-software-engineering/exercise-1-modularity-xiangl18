@@ -2,8 +2,6 @@
 # Copyright 2019 Qinmei Du duqinmei@bu.edu
 # User Interface Module
 
-
-#copyright @Qinmei Du
 #It's the I/O documentation for the User_Interface_system
 #User Interface
 
