@@ -1,15 +1,15 @@
 import InputModule_lxc
-from Storage import Storage
+from StorageModule import Storage
 from AiModule import AiModule
-import Alert_module
-import UserInterface_module
+import AlertModule
+import UserInterfaceModule
 
 
 def main():
 #   Input Module   
-    pathbo = './examplebo.txt'
-    pathbp = './examplebp.txt'
-    pathpul = './examplepul.txt'
+    pathbo = './example/examplebo.txt'
+    pathbp = './example/examplebp.txt'
+    pathpul = './example/examplepul.txt'
     bo = InputModule_lxc.input(pathbo)
     bp = InputModule_lxc.input(pathbp)
     pul = InputModule_lxc.input(pathpul)
@@ -24,7 +24,7 @@ def main():
     predBloodOxygen, predBloodPressure, prePulse = ai.predict()
     
 #   Alert Module, 0-blood oxygen, 1-blood pressure, 2-pulse
-    alt = Alert_module.Alert()
+    alt = AlertModule.Alert()
     for k in range(len(bo)):
         boi = bo[k], 0
         bpi = bp[k], 1
@@ -40,9 +40,10 @@ def main():
             print("All good.")
         
 #   User Interface Module         
-    UserInterface_module.userinterface_input(bo, bp, pul, predBloodOxygen, predBloodPressure, prePulse)
-    UserInterface_module.userinterface_output(bo, bp, pul, predBloodOxygen, predBloodPressure, prePulse)
+    UserInterfaceModule.Userinterface_Input(bo, bp, pul, predBloodOxygen, predBloodPressure, prePulse)
+    UserInterfaceModule.Userinterface_Output(bo, bp, pul, predBloodOxygen, predBloodPressure, prePulse)
 
 
 if __name__ == '__main__':
+    main()
     main()
