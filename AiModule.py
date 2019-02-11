@@ -1,3 +1,7 @@
+#Copyright Xiang Li xiangl18@bu.edu
+#AI Module
+
+
 import random
 
 
