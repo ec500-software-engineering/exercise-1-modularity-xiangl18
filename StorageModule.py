@@ -1,4 +1,4 @@
-# copyright @ Gang Wei wg0502@bu.edu
+# Copyright @ Gang Wei wg0502@bu.edu
 # Storage Module
 
 class Storage():
