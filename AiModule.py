@@ -13,15 +13,15 @@ class AiModule():
         """
         try:
             while True:
-                if (type(bloodOxygen) != float) or (type(bloodPressure) != float) or (type(pulse) != float):
-                    raise AttributeError
-                else:
-                    self.bo.extend(bloodOxygen)
-                    self.bp.extend(bloodPressure)
-                    self.pulse.extend(pulse)
-#               or  self.bo.append(bloodOxygen)
-#                   self.bp.append(bloodPressure)
-#                   self.pulse.append(pulse)
+                for i, j, k in zip(bloodOxygen, bloodPressure, pulse):
+                    if (type(i) != float) or (type(j) != float) or (type(k) != float):
+                        raise AttributeError
+                    else:
+                        self.bo.append(i)
+                        self.bp.append(j)
+                        self.pulse.append(k)
+
+                print(self.bo)
                 break
 
         except AttributeError:
@@ -44,5 +44,4 @@ class AiModule():
             print('predicted blood oxygen is: ' + str(predBloodOxygen))
             print('predicted blood pressure is: ' + str(predBloodPressure))
             print('predicted pulse is: ' + str(prePulse))
-        return predBloodOxygen, predBloodPressure, prePulse
         return predBloodOxygen, predBloodPressure, prePulse
