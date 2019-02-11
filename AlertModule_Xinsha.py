@@ -1,3 +1,6 @@
+# Copyright @ Xinsha Wang xinshaww@bu.edu
+# Alert Module
+
 #It's the I/O documentation for Alert System
 
 #Alert Sys
