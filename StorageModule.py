@@ -1,5 +1,5 @@
 # copyright @ Gang Wei wg0502@bu.edu
-# storage module
+# Storage Module
 
 class Storage():
     def __init__(self, bo, bp, pul):
