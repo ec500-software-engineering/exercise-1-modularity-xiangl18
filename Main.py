@@ -29,9 +29,15 @@ def main():
         boi = bo[k], 0
         bpi = bp[k], 1
         puli = pul[k], 2
+        dic = {0: 'Blood Oxygen', 1: 'Blood Pressure', 2: 'Pulse'}
         alt.Alert_for_three_categories_input(boi)
         alt.Alert_for_three_categories_input(bpi)
         alt.Alert_for_three_categories_input(puli)
+        alert = alt.Alert_Output()
+        if alert_sound != -1:
+            print("Alert", dic[alert])
+        else:
+            print("All good.")
         
 #   User Interface Module         
     UserInterface_module.userinterface_input(bo, bp, pul, predBloodOxygen, predBloodPressure, prePulse)
