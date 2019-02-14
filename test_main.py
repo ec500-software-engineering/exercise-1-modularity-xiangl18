@@ -6,7 +6,9 @@ from AiModule import AiModule
 import AlertModule
 import UserInterfaceModule
 
-
+def test_func():
+    main()
+    
 def main():
 #   Input Module   
     pathbo = './example/examplebo.txt'
