@@ -1,26 +1,34 @@
 # URL: https://github.com/WenjieLuo2333/ModuleDesign/blob/master/storage.py
 # Copyright 2019 Gang Wei wg0502@bu.edu
 # Storage Module
+import threading
+import time
 
-class Storage():
-    def __init__(self, bo, bp, pul):
-        self.bo = bo
-        self.bp = bp
-        self.pul = pul
-    def filter(self):
-        return 0
-        #for useful data
-#     Input = input()
-    # connection to the database
-    # storage the data into the database
-    # extract the data out of the database of the format
-    def read(self):
-        if self.Input == "bo":
-            return self.bo
-        elif self.Input == "bp":
-            return self.bp
-        elif self.Input == "pul":
-            return self.pul
 
-    # for example: print(storage(3,4,5).read())
-    # which is bo = 3,bp = 4,and pul = 5
+class Storage(threading.Thread):
+    def __init__(self, queue):
+        super().__init__()
+        self.bo = []
+        self.bp = []
+        self.pul = []
+        self.input = 0
+        self.queue = queue
+
+    def getIput(self, get):
+        self.input = get
+
+    def run(self):
+        time.sleep(2)
+        self.bo = self.queue.get(block=False)
+        self.bp = self.queue.get(block=False)
+        self.pul = self.queue.get(block=False)
+        if self.input == "bo":
+            print('current blood oxygen: {}'.format(self.bo))
+        elif self.input == "bp":
+            print('current blood pressure: {}'.format(self.bp))
+        elif self.input == "pul":
+            print('current pulse: {}'.format(self.pul))
+        self.queue.put(self.bo, block=False)
+        self.queue.put(self.bp, block=False)
+        self.queue.put(self.pul, block=False)
+
