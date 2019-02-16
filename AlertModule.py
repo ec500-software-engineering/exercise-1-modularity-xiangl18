@@ -21,7 +21,7 @@ class Alert(threading.Thread):
         self.puli = []
         self.queue = queue
         self.queue2 = queue2
-        self.average_list = average_list = [[] for i in range(3)]
+        self.average_list = [[] for i in range(3)]
         self.alert_flag = -1
         self.dic = {0: 'Blood Oxygen', 1: 'Blood Pressure', 2: 'Pulse'}
 
