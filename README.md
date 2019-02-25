@@ -10,7 +10,7 @@ python main.py
 ```
 in your command line.  
 ## Pros & Cons  
-Pros:  
+### Pros:  
 By using threading and queue, we can easily achieve running and connnecting different modules, and also communicating between mudules.  
-Cons:  
+### Cons:  
 Could consider implementing callback.
